@@ -8,9 +8,9 @@ export default function Section() {
              <center>
                 <div className='txtbox1'>
                     <center>
-                        <h3 className='text1'>Developing Innovative Strategies</h3>
+                        <h3 className='text1 animate__animated animate__fadeInLeft'>Developing Innovative Strategies</h3>
 
-                        <h1 className='text2'>ACHIEVING GROWTH</h1>
+                        <h1 className='text2  animate__animated animate__fadeInLeft'>ACHIEVING GROWTH</h1>
 
 
                         <button className='btn1'>Free Consulation</button>
@@ -21,7 +21,7 @@ export default function Section() {
 
 
         <div className='box1'>
-            <div className='b1'>
+            <div className='b1 animate__animated animate__fadeInLeft'>
                 <center>
                     <h2 className='text3'>SERVICES</h2>
 
@@ -35,7 +35,7 @@ export default function Section() {
 
 
 
-            <div className='b1'>
+            <div className='b1 animate__animated animate__fadeInUpBig'>
                 <center>
                     <h2 className='text3'>PROJECTS</h2>
 
@@ -48,7 +48,7 @@ export default function Section() {
             </div>
 
 
-            <div className='b1'>
+            <div className='b1 animate__animated animate__fadeInRight'>
                 <center>
                     <h2 className='text3'>CLIENTS</h2>
 

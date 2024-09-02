@@ -4,12 +4,12 @@ import Section from './Section'
 import Footer from './Footer'
 
 export default function Home() {
-  return (
-    <div>
-      <Nav/>
-        <Section/>
-            <Footer/>
+    return (
+        <div>
+            <Nav />
+            <Section />
+            <Footer />
         </div>
-    
-  )
+
+    )
 }
