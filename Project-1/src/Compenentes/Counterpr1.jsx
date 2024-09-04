@@ -15,9 +15,9 @@ export default function Function() {
                     </div>
                 </div>
             </div>
-                <button onClick={() => setCount(count + 1)} style={{ height: "50px", width: "150px", margin: "20px",}}>INCRASE</button>
+               <div id='bx1'><button onClick={() => setCount(count + 1)} style={{ height: "50px", width: "150px", margin: "20px"}}>INCRASE</button>
                 <button onClick={() => setCount(count - 1)} style={{ height: "50px", width: "150px", margin: "20px" }}>Decreace</button>
-                <button onClick={reset} style={{ height: "50px", width: "150px", margin: "20px" }}>Reset</button>
+                <button onClick={reset} style={{ height: "50px", width: "150px", margin: "20px" }}>Reset</button></div> 
         </div>
     )
 }
