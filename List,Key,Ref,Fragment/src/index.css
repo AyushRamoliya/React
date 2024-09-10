@@ -1,0 +1,65 @@
+body{
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  background-image: url(https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?t=st=1725954157~exp=1725957757~hmac=14856b109c974b1bce225d3ccc037b965b92a8ddd8b10ce8274d3c121bc7c2ff&w=900);
+  height: 550px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+  height: 40px;
+  width: 300px;
+  border: none;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+}
+div{
+  /* border: 1px solid; */
+}
+#d1{
+  /* border: 1px solid; */
+  width: 30%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+#d2{
+  /* border: 1px solid; */
+  width: 30%;
+  margin-top: -23%;
+  margin-left: 35%;
+}
+button{
+  height: 50px;
+  width: 220px;
+  font-size: 26px;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/022/925/493/large_2x/white-abstract-geometric-shapes-background-ideal-for-poster-cover-branding-wallpaper-banner-website-presentation-modern-geometry-in-minimal-concept-classic-and-clean-3d-rendering-free-photo.jpg);
+  background-size: cover;
+  background-position: center;
+  color: black;
+  border: none;
+  transition: 1s;
+}
+button:hover{
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231108/pngtree-abstract-texture-shades-of-purple-and-white-image_13779978.png);
+  background-position: center;
+  background-size: cover;
+  transition-duration: 1s;
+}
+h1{
+  color:white;
+  font-size: 50px;
+}
+#u1{
+  margin-left: 130%;
+  margin-top: -52%;
+}
+#i1{
+  margin-left: 120%;
+  /* margin-top: -38%; */
+
+}
+p{
+  font-size: 20px;
+  color: white;
+}
