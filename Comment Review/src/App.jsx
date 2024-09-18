@@ -1,12 +1,11 @@
 import React from 'react'
-import Formvalidation from './Componentes/Formvalidation'
+import Form from './Componentes/Form'
 import './App.css';
-
 
 export default function App() {
   return (
     <>
-      <Formvalidation/>
+      <Form/>
     </>
   )
 }
