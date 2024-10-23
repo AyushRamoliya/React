@@ -71,7 +71,7 @@ export default function Searching() {
 
   ];
 
-  // Filter based on name and subject
+  
   const data = arr.filter(
     (item) =>
       (subject ? item.subject === subject : true) &&
@@ -79,7 +79,7 @@ export default function Searching() {
   );
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "30px" }}>
       <h1>Filter</h1>
       <input
         type="text"
@@ -99,12 +99,12 @@ export default function Searching() {
       <div style={{ display: "flex" ,flexWrap: "wrap", gap: "10px", width: "100%" }}>
         {data.length > 0 ? (
           data.map((e, i) => (
-            <div key={i} style={{ display: "flex", flexDirection: "column", border: "1px solid #ccc", padding: "10px", borderRadius: "5px" }}>
+            <div key={i} style={{ display: "flex", flexDirection: "column", border: "1px solid #ccc", padding: "10px", borderRadius: "5px", marginLeft:"20px" }}>
               {e.image && (
                 <img
                   src={e.image}
                   alt={e. Company}
-                  style={{ width: "300px", height: "300px", borderRadius: "5px" }}
+                  style={{ width: "350px", height: "300px", borderRadius: "5px",marginLeft:"10px"}}
                 />
               )}
               <h3>Company: {e.Comapny}</h3>
