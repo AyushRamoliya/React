@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,75 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+/* MoneyManager.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.txt1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.main1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.incomeAmount, .expenseAmount {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 44%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"], input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.expenseList {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.expenseList div {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expenseList p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #333;
 }

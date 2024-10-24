@@ -24,8 +24,8 @@ export default function MoneyManager() {
 
     return (
         <div>
-            <h1>Money Manager</h1>
-
+            <h1 className='txt1'>Money Manager</h1>
+            <div className='main1'>
             <div className="incomeAmount">
                 <input 
                     type="number" 
@@ -51,6 +51,7 @@ export default function MoneyManager() {
                     onChange={(e) => setDescription(e.target.value)} 
                 />
                 <button onClick={handleExpense}>Add Expense</button>
+            </div>
             </div>
 
             <div className="expenseList">
