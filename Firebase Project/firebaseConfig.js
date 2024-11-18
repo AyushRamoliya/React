@@ -1,18 +1,18 @@
 import { initializeApp } from "firebase/app";
-import { getAuth} from  "firebase/auth"
+import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAfzirYfcn5ey9QK3OB78e0VVJ2zZHn11o",
-  authDomain: "fbproject-3c9e8.firebaseapp.com",
-  projectId: "fbproject-3c9e8",
-  storageBucket: "fbproject-3c9e8.firebasestorage.app",
-  messagingSenderId: "973810705605",
-  appId: "1:973810705605:web:8d00a6cf04f1d5803bbcac"
+  apiKey: "AIzaSyBpOiEs-3nTVBTJn2zc2oftPAf-xMOOaNU",
+  authDomain: "fir-project1-5e4e4.firebaseapp.com",
+  projectId: "fir-project1-5e4e4",
+  storageBucket: "fir-project1-5e4e4.firebasestorage.app",
+  messagingSenderId: "50961145574",
+  appId: "1:50961145574:web:db472787b1c8f27ac46527"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app)
-const auth = getAuth(app)
-export {auth , db}
+  const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+export {db , auth}
