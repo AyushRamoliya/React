@@ -1,6 +1,6 @@
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Link , useNavigate } from 'react-router-dom';
 import { auth } from '../../firebaseConfig';
 
 export default function SignIn() {
@@ -13,7 +13,7 @@ export default function SignIn() {
     signInWithEmailAndPassword(auth, email, password)
       .then(users => {
         navigate("/dashboard");
-      })
+      })  
 
   };
 
@@ -36,6 +36,7 @@ export default function SignIn() {
       <button onClick={handleSubmit} className="signin-button">
         Login
       </button>
+      <Link to={"/"}>Sign up</Link>
     </div>
   );
 }
