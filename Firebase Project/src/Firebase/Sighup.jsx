@@ -11,12 +11,7 @@ export default function Signup() {
     const [city, setCity] = useState('')
     const [hobby, setHobby] = useState('')
 
-    const [nameerr, setNameerr] = useState('')
-    const [emailerr, setEmailerr] = useState('')
-    const [passerr, setPasserr] = useState('')
-    const [cityerr, setCityerr] = useState('')
-    const [hobbyerr, setHobbyerr] = useState('')
-
+   
     const navigate = useNavigate()
 
     const handlesignup = () => {
@@ -26,77 +21,36 @@ export default function Signup() {
                     name, email, city, hobby
                 })
                 console.log("added");
-                navigate("/dashboard");
+                navigate("/dashboard"); 
             })
-        if (!name) {
-            setNameerr("*Enter name")
-        }
-        else {
-            setNameerr("")
-        }
+        
 
-        if (!email) {
-            setEmailerr("*Enter email")
-        }
-        else {
-            setEmailerr("")
-        }
-
-        if (!pass) {
-            setPasserr("*Enter password")
-        }
-        else {
-            setPasserr("")
-        }
-
-        if (!city) {
-            setCityerr("*Enter city")
-        }
-        else {
-            setCityerr("")
-        }
-
-        if (!hobby) {
-            setHobbyerr("*Enter hobby")
-        }
-        else {
-            setHobbyerr("")
-        }
+      
 
     }
 
     return (
         <div className='s1_main1'>
             <h1 className='heading'>Sign up Form</h1>
-            
+           
 
             <br />
             <input className='inp1' type="text" value={name} placeholder='Enter name' onChange={(e) => setName(e.target.value)} />
-            <p className='errmsg'>{nameerr}</p>
-            {/* <br /> */}
+            <br /><br />
             <input className='inp1' type="text" value={email} placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} />
-            <p className='errmsg'>{emailerr}</p>
-            {/* <br /> */}
+            <br /><br />
             <input className='inp1' type="text" value={pass} placeholder='Enter Pass' onChange={(e) => setPass(e.target.value)} />
-            <p className='errmsg'>{passerr}</p>
-            {/* <br /> */}
+            <br /><br />
             <input className='inp1' type="text" value={city} placeholder='Enter City' onChange={(e) => setCity(e.target.value)} />
-            <p className='errmsg'>{cityerr}</p>
-            {/* <br /> */}
+            <br /><br />
             <input className='inp1' type="text" value={hobby} placeholder='Enter Hobby' onChange={(e) => setHobby(e.target.value)} />
-            <p className='errmsg'>{hobbyerr}</p>
-            {/* <br /> */}
-            <button className='btn2' onClick={handlesignup}>Submit</button>
-            <br />
-
-            <div className="btns">
-            <button className='btn1'>
-            <Link className='link' to={"/"}>Sign Up</Link>
-            </button>
-            <button className='btn'>
+            <br /><br />
+            <button className='button' onClick={handlesignup}>Sign Up</button>
+            <br /><br />
+            <button className='button'>
             <Link className='link' to={"/signin"}>Sign In</Link>
             </button>
-            </div>
+            <br />
 
         </div>
     )

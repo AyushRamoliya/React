@@ -1,320 +1,321 @@
-/* Container Styling */
-.s1_main2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4f4f9;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 50px auto;
-}
-
-/* Heading Styling */
-.heading1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Button Container Styling */
-.btns2 {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-/* Button Styling */
-.btn11,
-.btn12 {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn11:hover,
-.btn12:hover {
-  background-color: #0056b3;
-}
-
-/* Link Styling */
-.link {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Input Field Styling */
-.inp2 {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
-}
-
-.inp2:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-/* Error Message Styling */
-.errmsg {
-  color: #e74c3c;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-  text-align: left;
-  width: 100%;
-}
-
-/* Sign-In Button Styling */
-.btn21 {
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn21:hover {
-  background-color: #218838;
-}
-
-
-
-
-/* Container Styling */
-.s1_main1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f9fb;
-  padding: 50px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 450px;
-  margin: 50px auto;
-}
-
-/* Heading Styling */
-.heading {
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-/* Button Container Styling */
-.btns {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-/* Button Styling */
-.btn1,
-.btn {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn1:hover,
-.btn:hover {
-  background-color: #2980b9;
-  transform: translateY(-2px);
-}
-
-/* Link Styling */
-.link {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Input Field Styling */
-.inp1 {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  border: 1px solid #ced4da;
-  border-radius: 8px;
-  transition: border-color 0.3s ease;
-}
-
-.inp1:focus {
-  border-color: #3498db;
-  outline: none;
-}
-
-/* Error Message Styling */
-.errmsg {
-  color: #e74c3c;
-  font-size: 0.85rem;
-  margin-bottom: 12px;
-  text-align: left;
-  width: 100%;
-}
-
-/* Sign-Up Button Styling */
-.btn2 {
-  background-color: #2ecc71;
-  color: #fff;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn2:hover {
-  background-color: #27ae60;
-  transform: translateY(-2px);
-}
-
-/* Main Dashboard Container */
-.dashbord {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #f5f5f5;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Welcome Text Styling */
-.p1 {
-  font-size: 1.5rem;
-  color: #34495e;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.p1 span {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-/* Dashboard Text Container */
-.dashbord_text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Input Fields Styling */
-.dashbord_text input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #bdc3c7;
-  border-radius: 8px;
-  transition: border-color 0.3s ease;
-}
-
-.dashbord_text input:focus {
-  border-color: #3498db;
-  outline: none;
-}
-
-/* Task and Priority Headers */
-.dashbord_text h3 {
-  color: #2c3e50;
+body {
+  background: linear-gradient(135deg,  #3e0000, #ed003f);
   margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+  font-family: "Sour Gummy", sans-serif;  
 }
-
-/* Add/Update Task Button */
-.dashbord_text button {
-  background-color: #3498db;
-  color: #fff;
+.heading{
+  font-size: 50px;
+  font-family: "Sour Gummy", sans-serif;
+  color: #760000;  
+}
+.s1_main1{
+  width: 450px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  overflow-x: hidden;
+  background-color: white;
+}
+/* From Uiverse.io by Mhyar-nsi */ 
+button {
+  background-color: #f3f7fe;
+  color: #3b82f6;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: 0.3s;
 }
 
-.dashbord_text button:hover {
-  background-color: #2980b9;
-  transform: translateY(-2px);
+button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
 }
 
-/* Sign In Button Styling */
-.dashbord_text a button {
-  background-color: #e67e22;
-  margin-top: 10px;
+
+input{
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  margin: 0px;
+  border-radius: 15px;
+  border:2px solid rgb(227, 227, 227);
+  font-family: "Sour Gummy", sans-serif;  
+}
+.inp1{
+  animation: fadeIn 1s ease-in-out;
+}
+.inp2{
+  animation: fadeIn1 1s ease-in-out;
+  /* margin-top: 20px; */
+}
+button{
+  width: 100%;
+  /* margin: 10px; */
+  height: 40px;
+}
+.p1{
+  text-transform: uppercase;
+  font-size: 50px;
 }
 
-.dashbord_text a button:hover {
-  background-color: #d35400;
+
+
+
+.btn1{
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg,  #00003e, #006ded);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 100%;
+}
+.btn1 .link{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn .link{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
 }
 
-/* Records Container */
+::placeholder{
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn2{
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+   background: linear-gradient(45deg,  #00003e, #006ded);
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   animation: fadeIn 1s ease-in-out;
+
+}
+
+
+
+
+
+
+.heading1{
+  animation: fadeIn1 1s ease-in-out;
+  font-size: 50px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.s1_main2{
+  width: 450px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  overflow-x: hidden;
+  /* animation: fadeIn 1s ease-in-out; */
+  background-color: white;
+}
+.btns2{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border:2px solid rgb(227, 227, 227);
+  border-radius: 15px;
+  animation: fadeIn1 1s ease-in-out;
+}
+
+
+input{
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  margin: 0px;
+  border-radius: 15px;
+  border:2px solid rgb(227, 227, 227);
+  font-family: "Sour Gummy", sans-serif;  
+  animation: fadeIn1 1s ease-in-out;
+}
+button{
+  width: 100%;
+  /* margin: 10px; */
+  height: 40px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.p1{
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.errmsg{
+  color: red;
+  line-height: 5px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.btn12{
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg,  #00003e, #006ded);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 100%;
+
+}
+.btn12 .link{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn11 .link{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn11{
+  /* padding: 15px 30px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 100%  ;
+
+}
+::placeholder{
+  font-family: "Sour Gummy", sans-serif;  
+}
+.btn21{
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+   background: linear-gradient(45deg,  #00003e, #006ded);
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   animation: fadeIn1 1s ease-in-out;
+
+}
+
+
+.p1{
+  animation: fadeIn2 1s ease-in-out;
+    text-shadow: 0 13.36px 8.896px #2c482e, 0 -2px 1px #aeffb4;
+   letter-spacing: -1px;
+   color: #dd61b2;
+}
+
+
+
+
+.box1{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
 .dashbord_flex {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 30px;
-}
-
-/* Individual User Record */
-.user_record {
-  background-color: #ecf0f1;
-  border-radius: 10px;
   padding: 20px;
-  flex: 1;
-  min-width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Task and Priority Text Styling */
+.user_record {
+  background: transparent ;
+  border-radius: 12px;
+  color: #ffffff;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user_record:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 .user_text h1 {
-  font-size: 1.2rem;
-  color: #34495e;
-  margin: 0;
+  font-size: 18px;
+  margin: 5px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* User Action Buttons */
-.user_action {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
 
 .user_action button {
-  background-color: #2ecc71;
-  color: #fff;
+  background-color: #ffffff;
   border: none;
-  padding: 10px;
-  border-radius: 6px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: black;
+  margin: 5px 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.user_action button:hover {
-  background-color: #27ae60;
+/* .user_action button:hover {
+  background-color: #6fc3df;
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
-.user_action button:nth-child(2) {
-  background-color: #e74c3c;
+.user_action button:active {
+  position: relative;
+  overflow: hidden;
+} */
+/* 
+.user_action button:active::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 0.6s ease-out;
 }
 
-.user_action button:nth-child(2):hover {
-  background-color: #c0392b;
-}
+@keyframes ripple {
+  from {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(4);
+  }
+} */

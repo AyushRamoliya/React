@@ -2,7 +2,7 @@ import { onAuthStateChanged } from 'firebase/auth'
 import React, { useEffect, useState } from 'react'
 import { auth, db } from '../../firebaseConfig'
 import { addDoc, collection, deleteDoc, doc, getDoc, getDocs, updateDoc } from 'firebase/firestore'
-import { Link} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function DashBoard() {
 
@@ -44,12 +44,12 @@ export default function DashBoard() {
     const fetchData = async () => {
         const allData = await getDocs(collection(db, "Todos"))
 
-        const filteredData = allData.docs.map((data) => ({
+        const fData = allData.docs.map((data) => ({
             docId: data.id, ...data.data()
         })).filter((item) => item.uid === user.uid) 
 
-        console.log(filteredData)
-        setRecord(filteredData)
+        console.log(fData)
+        setRecord(fData)
     }
 
 
@@ -101,15 +101,18 @@ export default function DashBoard() {
                 <input type="text" placeholder='Enter Your Task...' value={task} onChange={(e) => setTask(e.target.value)} />
                 <h3>priority</h3>
                 <input type="text" placeholder='Enter Your priority...' value={priority} onChange={(e) => setPriority(e.target.value)} />
-                <button onClick={handleTask}>
+                <br /><br />
+                <div className="btns1">
+                <button className='button' onClick={handleTask}>
                     {editIndex == null ? "Add Task" : "Update Task"}
-                </button>
+                </button><br /><br />
+                <button className='button'>
+                <Link className='link' to={"/signin"}>
+                    Sign In
+                </Link></button>
+                </div>
 
-                <Link to={"/signin"}>
-                    <button>Sign In</button>
-                </Link>
-
-
+                <br /><br />
 
                 <div className="dashbord_flex">
                     {
@@ -123,8 +126,8 @@ export default function DashBoard() {
                                     </div>
 
                                     <div className="user_action">
-                                        <button onClick={() => handleEdit(e.docId)}>Edit</button><br />
-                                        <button onClick={() => handleDelete(e.docId)}>Delete</button>
+                                        <button className='btn' onClick={() => handleEdit(e.docId)}><i class="fa-solid fa-plus"></i></button><br /><br />
+                                        <button className='btn' onClick={() => handleDelete(e.docId)}><i class="fa-solid fa-trash"></i></button>
                                     </div>
 
                                 </div>
