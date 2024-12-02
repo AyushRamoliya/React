@@ -32,7 +32,7 @@ export default function ElectronicCategory() {
                 {
                     menCategory.map((product) => {
                         return (
-                            <div className='w-[100%] sm:w-[48%] md:w-[32%] lg:w-[23%] mt-[30px] border border-black pt-[30px] rounded-[10px]'>
+                            <div className='w-[100%] sm:w-[48%] mt-[30px] border border-white pt-[30px] rounded-[10px] shadow-xl'>
                                 <div className="imageDiv flex justify-center">
                                     <img className='h-[30vh]' src={product.image} alt="" />
                                 </div>
